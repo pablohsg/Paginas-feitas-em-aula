@@ -1,0 +1,33 @@
+html{
+	background-color: green ;
+}
+
+body{
+	background-color: #e3df10;
+	border: 2px solid white;
+}
+
+#titulo-principal{
+	text-align: center;/*alinhar o texto ao centro*/
+	text-decoration: underline;/*coloca sublinhado no texto*/
+}
+
+#noticias{
+	margin-right: 50px;
+	margin-left: 50px;
+	padding: 10px;
+}
+
+.azul{
+	text-align: justify;
+	color: blue;
+}
+
+.noticia{
+	border-bottom: 1px solid black;
+}
+
+#ultima-noticia{
+	border-bottom: none;
+}
+
