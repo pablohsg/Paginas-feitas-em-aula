@@ -1,0 +1,17 @@
+#titulo-principal{
+	color: red;
+}
+
+.azul{
+	color: blue;
+}
+
+.noticia{
+	color: yellow;
+	background-color: green;
+}
+
+.artista{
+	color: #d42fb8;
+	text-decoration: underline;
+}
