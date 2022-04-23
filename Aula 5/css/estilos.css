@@ -1,0 +1,86 @@
+*{/*Resetando configurações padrões*/
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    background-color: darkred;
+}
+
+nav ul{
+    box-sizing: border-box;
+    padding: 10px;
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover{
+    cursor: pointer;
+    color: black;
+    border: 2px solid black;
+}
+
+main{
+    background-color: cadetblue;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: darkcyan;
+    height: 50px;
+    font-size: 16px;
+}
+
+.secao{
+    padding: 20px;
+}
+
+#youtube{
+    background-color: #f9f9f9;
+}
+
+#mapa{
+    background-color: cadetblue; 
+}
+
+#game{
+    background-color: #53792f;
+}
+
+p{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-indent: 15px;
+    text-align: justify;
+}
+
+.legenda{
+    text-align: center;
+}
+
+h2{
+    margin-bottom: 10px;
+}
+
+.iframes-personalizados{
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Deixando apenas o iframe centralizado*/
+/*iframe{
+    display: block;
+    margin: 0 auto;
+}*/
