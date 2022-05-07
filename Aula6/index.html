@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Estados css</title>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+    <h1>Estados CSS</h1>
+    <section id="pseudo-classes">
+        <h2>Pseudo classes</h2>
+
+        <h3>Sintaxe</h3>
+
+        <pre>
+            <code lang="css">
+            seletor:pseudo-classe{
+                propriedade:valor;
+            }
+            </code>
+        </pre>
+
+        <article>
+            <h3>Pseudo classe :hover</h3>
+            <p>Acontece quando passo o mouse por cima de um elemento.</p>
+            <div class="div-hover"></div>
+        </article>
+        
+        <article>
+            <h3>Pseudo classe :active</h3>
+            <p>Acontece quando eu clico sobre o elemento.</p>
+            <div class="div-active"></div>
+        </article>
+        
+        <article>
+            <h3>Pseudo classe :focus</h3>
+            <p>Acontece quando eu quero dar foco em um elemento.</p>
+            <input class="entrada" type="text"/>
+        </article>
+
+        <article>
+            <h3>Pseudo classe :link e :visited</h3>
+            <p>Utilizamos para definir a estilização de um link.</p>
+            <p><strong>link</strong> para quando um link não foi visitado.</p>
+            <p><strong>visited</strong> para quando um link foi visitado.</p>
+            <a href="https://pablohsgc.github.io/Aula5/" class="links">Nossa aula 5</a>
+        </article>
+    </section>
+    <section id="pseudo-elementos">
+        <h2>Pseudo elementos</h2>
+
+        <h3>Sintaxe</h3>
+
+        <pre>
+            <code lang="css">
+            seletor:pseudo-classe{
+                propriedade:valor;
+            }
+            </code>
+        </pre>
+
+        <article>
+            <h3>Pseudo elemento ::before</h3>
+            <div class="div-before">DIV</div>
+        </article>
+
+        <article>
+            <h3>Pseudo elemento ::after</h3>
+            <div class="div-after">DIV</div>
+        </article>
+
+        <article>
+            <h3>Pseudo elemento ::placeholder</h3>
+            <input class="place-holder" placeholder="Quando vazio"/>
+        </article>
+
+        <article>
+            <h3>Pseudo elemento ::selection</h3>
+            <p class="pseudo-selection">Quando selecionamos um texto, a propriedade é aplicada. Note que apenas esse parágrafo possui uma classe de estilização com o pseudo elemento.</p>
+        </article>
+    </section>
+
+    <section id="transicoes">
+        <h2>Transições</h2>
+
+        <h3>Sintaxe</h3>
+
+        <pre>
+            <code lang="css">
+            seletor{
+                transition:propriedade valor funcao-de-transicao delay;
+            }
+            </code>
+        </pre>
+
+        <article>
+            <h3>Transition</h3>
+            <div class="transicao"></div>
+        </article>
+
+        <article>
+            <h3>Transform</h3>
+            <div class="transform"></div>
+        </article>
+    </section>
+
+    <section id="animacoes">
+        <h2>Animações</h2>
+
+        <h3>Sintaxe</h3>
+
+        <pre>
+            <code lang="css">
+                seletor {
+                    animation: nome tempo timing-function;
+                }
+
+                @keyframes nome {
+                    0% {
+                        propriedade: valorX;
+                    }
+                    100% {
+                        propriedade: valorY;
+                    }
+                }
+                    
+            </code>
+        </pre>
+
+        <article>
+            <div class="universo">
+                <div class="terra"></div>
+                <div class="sol"></div>
+            </div>
+        </article>
+    </section>
+</body>
+</html>

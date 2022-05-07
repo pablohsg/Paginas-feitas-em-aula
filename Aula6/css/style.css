@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    text-align: center;
+}
+
+h2{
+    text-indent: 10px;
+}
+
+h3{
+    text-indent: 20px;
+}
+
+p{
+    text-indent: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', sans-serif;
+}
+
+code{
+    font-size: 20px;
+}
+
+section{
+    padding: 20px;
+}
+
+article{
+    padding: 10px;
+}
+
+#pseudo-classes{
+    background-color: cornflowerblue;
+}
+
+#pseudo-elementos{
+    background-color: aquamarine;
+}
+
+#transicoes{
+    background-color: cadetblue;
+}
+
+#animacoes{
+    background-color: darkturquoise;
+}
+
+div{
+    width: 80px;
+    height: 80px;
+    background-color: blueviolet;
+    margin-top: 10px;
+    margin-left: 200px;
+}
+
+.entrada{
+    margin-left: 200px;
+    margin-top: 10px;
+}
+
+.links{
+    margin-left: 150px;
+}
+
+/**/
+
+.place-holder::placeholder{
+    color: blue;
+}
+
+.pseudo-selection::selection{
+    color: white;
+    background-color: green;
+}
+
+p{
+    transition: all 1s ease-out;
+}
+
+.transicao{
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function:ease;
+}
+
+.transicao:hover{
+    background-color: brown;
+}
+
+.transform{
+    transition-property: all;
+    transition-duration: 2s; 
+}
+
+.transform:hover{
+    /*transform: translate(100px,50px);*/
+    transform: scale(0.5,1.5);
+    /*transform: rotate(90deg);*/
+}
+
+.universo{
+    width: 260px;
+    height: 260px;
+    background-color: black;
+    padding: 50px;
+    border-radius: 100%;
+}
+
+.terra{
+    border-radius: 100%;
+    background-color: green;
+    margin: 0;
+    position: relative;
+    top: 0;
+    left: 0; 
+}
+
+.sol{
+    border-radius: 100%;
+    margin: 0;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 0;
+    left: 80px;
+    background-color: orangered;
+}
+
+.universo{
+    animation-name: translacao;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes translacao {
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+
+/*Adição de estados*/
+.div-hover:hover{
+    background-color: chartreuse;
+}
+
+.div-active:active{
+    background-color: blue;
+}
+
+.entrada:focus{
+    background-color: blueviolet;
+}
+
+a:visited{
+    color: darkgreen;
+}
+
+.div-before::before{
+    content: "Inicio";
+}
+
+.div-after::after{
+    content: "Fim";
+}

@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: linear-gradient(0, #120c56, #000000);
+}
+
+.terra{
+  width: 60px;
+  height: 60px;
+  position: relative;
+  left: 30px;
+  background-image: linear-gradient(80deg,green,blue);
+  border-radius: 100%;
+}
+
+.lua{
+  width: 30px;
+  height: 30px;
+  background-image: linear-gradient(80deg,white,aqua);
+  border-radius: 100%;
+}
+
+.terra-lua{
+    width: 120px;
+    height: 120px;
+    padding: 30px;
+
+    animation-name: translacao;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+
+.sol{
+    width: 100px;
+    height: 100px;
+    background-image: linear-gradient(350deg,yellow,red);
+    border-radius: 100%;
+    position: relative;
+    left: 180px;
+}
+
+.universo{
+    margin: 0 auto;
+    width: 460px;
+    height: 460px;
+    padding: 120px;
+
+    animation-name: translacao;
+    animation-duration: 20s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes translacao {
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+
+    .stars{
+        position: absolute;
+        width: 3px;
+        height: 3px;
+        border-radius: 50%;
+        box-shadow: 50px 30px white,
+        100px 80px white,
+        80px 120px white,
+        300px 20px white,
+        250px 130px white,
+        200px 50px white,
+        150px 100px white,
+        500px 80px white,
+        600px 120px white,
+        800px 20px white,
+        450px 130px white,
+        900px 50px white,
+        650px 100px white,
+        200px 10px white,
+        150px 500px white,
+        500px 30px white,
+        600px 420px white,
+        800px 50px white,
+        450px 730px white,
+        900px 40px white,
+        650px 600px white,
+        520px 100px white;
+
+        animation: anim-stars 10s linear infinite;
+    }
+
+    @keyframes anim-stars {
+        from {
+            transform: translateY(0px);
+        }
+        to {
+            transform: translateY(150px);
+        }
+    }
