@@ -1,0 +1,23 @@
+header{
+    background-color: rgb(195, 235, 18);
+}
+
+nav ul{
+    box-sizing: border-box;
+    padding: 10px;
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li a:hover{
+    cursor: pointer;
+    color: blue;
+}

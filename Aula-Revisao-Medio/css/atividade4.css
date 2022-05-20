@@ -1,0 +1,29 @@
+*{
+  margin: 0;  
+}
+
+#noticias{
+    background-color: silver;
+}
+
+.noticia{
+    border-bottom: 1px solid black ;
+    padding: 20px;
+}
+
+h1{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+#ultima-noticia{
+    border: none;
+}
+
+p{
+    margin-bottom: 10px;
+    text-align: justify;
+}
